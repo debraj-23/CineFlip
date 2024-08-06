@@ -1,0 +1,108 @@
+Global styles
+body {
+    margin: 0;
+    padding: 0;
+    
+    background-repeat: no-repeat;
+    color: #fff; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+  }
+  
+  /* Header styles */
+  .header {
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    border: none; /* Remove border if any */
+    box-shadow: none; /* Remove box-shadow if any */
+    position: relative;
+    bottom: 0;
+    font-size: large;
+  }
+  
+  /* Container styles */
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center; /* Center the content vertically */
+    padding: 10px; /* Reduced padding */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+    margin-bottom: 60px; /* Ensure space for footer */
+  }
+  
+
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input, button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    align-items: center;
+  }
+  
+  label input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  p {
+    text-align: center;
+  }
+  
+  p a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  p a:hover {
+    text-decoration: underline;
+  }
+  
+  .message {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+  }
+  
+  .error {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+  }
+  
+  /* Footer styles */
+  .footer {
+    text-align: center;
+    padding: 5px; /* Reduced padding to decrease height */
+    background-color: transparent; /* Darker blue for footer */
+    color: #fff;
+    width: 100%;
+    position: relative;
+    margin-top: 20px; /* Ensure space between form-box and footer */
+    font-size: 14px; /* Optional: Reduce font size */
+  }
+  

@@ -1,0 +1,91 @@
+.admin-home .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .admin-home .header h1 {
+    font-size: 24px;
+  }
+  
+  .admin-home .header-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .admin-home .header-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .admin-home .header-buttons .logout {
+    background-color: #dc3545;
+  }
+  
+  .admin-home .header-buttons button:hover {
+    opacity: 0.8;
+  }
+  
+  .admin-home .main-content {
+    padding: 20px;
+  }
+  
+  .admin-home .movies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .admin-home .movie-card {
+    width: calc(25% - 20px);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .admin-home .movie-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .admin-home .movie-card .movie-poster {
+    width: 100%;
+    height: auto;
+  }
+  
+  .admin-home .movie-card .movie-info {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .admin-home .movie-card .movie-info h3 {
+    margin: 10px 0;
+  }
+  
+  .admin-home .movie-card .movie-info p {
+    margin: 5px 0;
+  }
+  
+  .admin-home .error {
+    color: #dc3545;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .admin-home .footer {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+  }
+  
