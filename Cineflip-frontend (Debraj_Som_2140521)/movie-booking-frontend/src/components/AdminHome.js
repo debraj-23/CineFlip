@@ -13,7 +13,7 @@ const AdminHome = () => {
   }, []);
 
   const fetchMovies = () => {
-    axios.get('http://localhost:8082/fetchAllMoves')
+    axios.get('http://13.233.40.14:8082/fetchAllMoves')
       .then(response => {
         if (Array.isArray(response.data)) {
           setMovies(response.data);
@@ -29,7 +29,7 @@ const AdminHome = () => {
   };
 
   const handleMovieClick = (movename) => {
-    axios.get(`http://localhost:8082/fetchAMove/${movename}`)
+    axios.get(`http://13.233.40.14:8082/fetchAMove/${movename}`)
         .then(response => {
             console.log('Fetched data for movie:', response.data); // Debug log
             if (response.data) {

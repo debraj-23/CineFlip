@@ -28,7 +28,7 @@ function Booking() {
   }, [movename]);
 
   const fetchMovieDetails = () => {
-    axios.get(`http://localhost:8082/fetchAMove/${movename}`)
+    axios.get(`http://13.233.40.14:8082/fetchAMove/${movename}`)
       .then(response => {
         const movieDetails = response.data;
         setTheaters(movieDetails.theaters || []);

@@ -13,7 +13,7 @@ function UserHome({ loginId }) {
   }, []);
 
   const fetchMovies = () => {
-    axios.get('http://localhost:8082/fetchAllMoves')
+    axios.get('http://13.233.40.14:8082/fetchAllMoves')
       .then(response => {
         if (Array.isArray(response.data)) {
           setMovies(response.data);
@@ -29,7 +29,7 @@ function UserHome({ loginId }) {
   };
 
   const handleMovieClick = (movename) => {
-    axios.get(`http://localhost:8082/fetchAMove/${movename}`)
+    axios.get(`http://13.233.40.14:8082/fetchAMove/${movename}`)
       .then(response => {
         const { theaters, posterUrl } = response.data;
         navigate('/booking', { state: { movename, theaters, posterUrl } });
